@@ -1,0 +1,20 @@
+1. La mémoire d'un processus Linux est organisée en segments : code, données (Data/BSS), pile (Stack) et tas (Heap).
+2. Le code source n'est pas directement en mémoire : il est compilé en code machine, chargé dans le segment Text.
+3. Oui, les variables sont en mémoire : globales dans Data/BSS, locales dans la pile et dynamiques dans le tas.
+4. Non, les variables ne sont pas permanentes : elles existent pendant une durée déterminée, généralement jusqu'à la fin de leur portée ou du programme.
+5. Oui, la pile (Stack) et le tas (Heap) contiennent des données temporaires.
+6. Les variables locales sont généralement stockées dans la pile et détruites à la fin de la fonction.
+7. On définit un tableau fixe avec `int tab[10];`.
+8. On utilise `malloc()` : `int *tab = malloc(n * sizeof(int));`.
+9. L'allocation statique réserve une mémoire dont la taille est déterminée à l'avance.
+10. L'allocation dynamique réserve de la mémoire pendant l'exécution du programme.
+11. La zone d'allocation dynamique s'appelle le tas (Heap).
+12. Le tas se trouve dans l'espace mémoire virtuel du processus Linux.
+13. La taille statique est déterminée à l'avance, tandis que la taille dynamique dépend des besoins et de la mémoire disponible.
+14. `malloc(n * sizeof(int))` réserve de la mémoire pour `n` entiers et renvoie un pointeur.
+15. `free(p)` libère la mémoire précédemment réservée avec `malloc()`.
+16. On accède à la mémoire allouée avec un pointeur, par exemple `p[0]` ou `*p`.
+17. La quantité maximale dépend de la mémoire disponible et des limites imposées par le système.
+18. Oui, on peut réserver dynamiquement de la mémoire pour des variables de différents types avec `malloc()`.
+19. Un pointeur est une variable contenant une adresse mémoire ; on peut effectuer des opérations arithmétiques dessus.
+20. `p+1` désigne l'élément suivant, `*p` accède à la valeur pointée et `&a` donne l'adresse de `a`.
