@@ -1,0 +1,14 @@
+Exercice 1 : 
+
+./essai_variables.sh 		-> oui (nouveau processus)
+bash essai_variables.sh 	-> oui (nouveau processus)
+source essai_variables.sh 	-> non (shell courant)
+. essai_variables.sh 		-> non (shell courant)
+
+Exercice 2 :
+
+Il faut modifier le fichier .bashrc dans ~.
+
+Exercice 3 :
+
+non, car ce sont des processus séparés.
