@@ -1,0 +1,11 @@
+1. La récursion est une technique où une fonction s'appelle elle-même pour résoudre un problème.
+2. La récursion terminale est une récursion où l'appel récursif est la dernière opération effectuée par la fonction.
+3. La récursion sert à résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples.
+4. Oui, la plupart des langages de programmation permettent d'utiliser la récursion.
+5. Oui, le langage SQL standard (sans fonctions récursives ni extensions) ne permet pas la récursion dans les requêtes classiques.
+6. Oui, un programme itératif peut être transformé en programme récursif.
+7. Oui, un programme récursif peut être transformé en programme itératif.
+8. Oui, la récursion peut ralentir un programme à cause des appels de fonctions répétés.
+9. Oui, elle utilise de la mémoire supplémentaire pour stocker les appels successifs dans la pile d'exécution.
+10. Le compilateur prépare les appels récursifs en utilisant généralement une pile d'exécution pour mémoriser chaque appel.
+11. Les variables de la première fonction** sont conservées en mémoire dans la pile jusqu'à la fin de son exécution.
