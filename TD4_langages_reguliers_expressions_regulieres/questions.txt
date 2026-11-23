@@ -1,0 +1,12 @@
+1. Un langage régulier est un langage qui peut être reconnu par un automate fini.
+2. Un langage rationnel est un langage qui peut être décrit par une expression régulière ; c'est un synonyme de langage régulier.
+3. Exemple : le langage contenant autant de `a` que de `b` n'est pas régulier.
+4. Les opérateurs de base : `+` représente l'union, `.` la concaténation et `*` la répétition zéro ou plusieurs fois.
+5. Il existe un lien direct : les expressions régulières permettent de décrire exactement les langages réguliers.
+6. D'autres symboles courants sont `ε` (mot vide), `∅` (langage vide) et les parenthèses `()` (groupement).
+7. Les expressions régulières ont été introduites par le mathématicien Stephen Cole Kleene dans les années 1950.
+8. Les expressions régulières servent à rechercher, vérifier, extraire ou remplacer des morceaux de texte.
+9. Les différences entre les trois types :
+   - Simple Regular Expressions : utilisent les opérateurs de base comme `+`, `.` et `*`.
+   - POSIX BRE : version de base utilisée notamment par certains outils Unix, avec des caractères spéciaux souvent précédés de `\`.
+   - POSIX ERE : version étendue qui permet d'utiliser directement `+`, `?`, `|` et `{}` pour des recherches plus complexes.
