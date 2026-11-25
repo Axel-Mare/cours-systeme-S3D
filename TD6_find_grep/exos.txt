@@ -1,0 +1,54 @@
+Memo_MenageFind : 
+
+Exercice 1: En vous inspirant de la commande suivante, construisez une commande 
+permettant d'effacer tous les fichiers *.class accessibles à partir de votre 
+home directory:
+
+find /usr -name '*.h' -exec echo hip {} hop \;
+
+=> find ~ -name '*.class' -exec rm {} \;
+
+----
+
+Exercice 2: Même question en vous inspirant de la commande suivante:
+
+find /usr/include -name '*stdio*.h' | xargs echo DEBUT
+
+=> find ~ -name '*.class' | xargs rm
+
+----
+
+Exercice 3: Même question en vous inspirant de la commande suivante:
+
+echo DEBUT $(ls /usr/include/std*.h) FIN
+
+=> echo $(find ~ -name '*.class') | xargs rm
+
+/////////////////////////////////////////////////////////////////////////
+
+Memo_FindGrepSortHead :
+
+Question 1: En vous aidant des documentations disponibles, décrivez précisément 
+ce que fait la commande suivante:
+
+find ~ -type f -printf "%b %h/%f\n" 2> /dev/null | grep -v '.git' | sort -n -r | head -n 4
+
+=> La commande recherche les fichiers du répertoire perso ~, affiche leur taille, leur chemin, masque les erreurs, exclut les fichiers .git, trie par taille décroissante et affiche les 4 premiers résultats.
+
+----
+
+Question 2: Estimez le nombre de processus exécutés par la commande précédente.
+
+=> 4, pour find, grep, sort, head
+
+/////////////////////////////////////////////////////////////////////////
+
+Memo_GrepXargsSed :
+
+Exercice: Attention, la commande suivante risque de modifier vos fichiers. Décrivez précisément 
+ce que fait cette commande:
+
+ancien="xVdHff36"; grep -l "$ancien" . -R | grep -v '.git' | xargs sed -i s/$ancien/jjggkk/g
+
+=> cette commande fait une recherche récursive des fichiers avec xVdHff36, exclut les fichiers .git, et remplace par jjggkk
+

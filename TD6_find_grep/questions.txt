@@ -1,0 +1,2 @@
+1. Ken Thompson, en 1973, a créé grep sous Unix ; son nom vient de la commande g/re/p (global regular expression print).
+2. Pour rechercher plusieurs motifs simultanément, il faut utiliser -e pour chaque motif : grep -e "erreur" -e "warning" fichier.txt
